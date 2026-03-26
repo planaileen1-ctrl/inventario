@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import RegistroProducto from './components/RegistroProducto';
 import MovimientoStock from './components/MovimientoStock';
 import { collection, getDocs } from 'firebase/firestore';
-import { db } from './lib/firebase';
+import { db } from '../lib/firebase';
 
 export default function Page() {
   const [vista, setVista] = useState<'dashboard' | 'registroProducto' | 'movimientoStock'>('dashboard');

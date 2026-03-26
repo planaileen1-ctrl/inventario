@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { collection, addDoc, Timestamp } from 'firebase/firestore';
-import { db } from '../lib/firebase';
+import { db } from '../../lib/firebase'; // <-- ruta corregida
 
 type Props = {
   onBack: () => void;
@@ -31,7 +31,7 @@ export default function RegistroProducto({ onBack, usuario }: Props) {
         codigo,
         cantidad: Number(cantidad),
         creadoEn: Timestamp.now(),
-        usuario // registramos quién agregó el producto
+        usuario
       });
       alert('Producto registrado con éxito!');
       setProducto('');

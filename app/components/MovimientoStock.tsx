@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import { collection, getDocs, addDoc, doc, updateDoc, Timestamp } from 'firebase/firestore';
-import { db } from '../lib/firebase';
+import { db } from '../../lib/firebase'; // <-- ruta corregida
 
 type Props = {
   onBack: () => void;

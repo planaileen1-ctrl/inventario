@@ -1,4 +1,4 @@
-import { db } from "@/lib/firebase";
+import { db } from "../../../lib/firebase"; // <-- cambio solo aquí
 import { collection, getDocs, addDoc } from "firebase/firestore";
 
 // GET → obtener productos
